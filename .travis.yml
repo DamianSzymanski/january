@@ -5,4 +5,5 @@ dist: focal
 script:
 - cat /etc/os-release
 - curl -sfL https://get.k3s.io | sh -
+- systemctl status k3s.service
 - sudo kubectl get nodes
