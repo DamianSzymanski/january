@@ -4,7 +4,8 @@ dist: focal
 
 script:
 - cat /etc/os-release
-- curl -sfL -o ${HOME}/k3s https://github.com/k3s-io/k3s/releases/download/v1.23.3%2Bk3s1/k3s
-- sudo ${HOME}/k3s server &
+- curl -LO https://github.com/k3s-io/k3s/releases/download/v1.23.3%2Bk3s1/k3s
+- sudo ./k3s server &
+- curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"
 #- systemctl status k3s.service
-- sudo kubectl get nodes
+- sudo ./kubectl get nodes
