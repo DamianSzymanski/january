@@ -1,0 +1,6 @@
+virt: lxd
+
+dist: focal
+
+script:
+- cat /etc/os-release
