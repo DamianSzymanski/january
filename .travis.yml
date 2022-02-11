@@ -7,6 +7,7 @@ script:
 - curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64
 - mv minikube-linux-amd64 minikube
 - chmod +x minikube
+- docker ps
 #- curl -LO https://github.com/k3s-io/k3s/releases/download/v1.23.3%2Bk3s1/k3s
 #- chmod +x k3s
 #- sudo ./k3s server --kubelet-arg=feature-gates=KubeletInUserNamespace=true --kube-controller-manager-arg=feature-gates=KubeletInUserNamespace=true --kube-apiserver-arg=feature-gates=KubeletInUserNamespace=true &
