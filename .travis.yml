@@ -27,5 +27,5 @@ php:
 
 script:
 - sudo apt update
-- sudo apt install libargon2-0-dev -y
+- sudo apt install libargon2-dev -y
 - php --version
