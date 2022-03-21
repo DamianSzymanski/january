@@ -20,12 +20,13 @@
 os: linux
 dist: xenial
 language: php
+group: dev
 php:
   - 7.3
   - 8.1
   - 7.4
 
 script:
-- wget https://launchpad.net/~ondrej/+archive/ubuntu/php/+build/20133803/+files/libargon2-dev_0~20190702-0.1+ubuntu18.04.1+deb.sury.org+1_amd64.deb
-- sudo dpkg -i libargon2-dev_0~20190702-0.1+ubuntu18.04.1+deb.sury.org+1_amd64.deb
+#- wget https://launchpad.net/~ondrej/+archive/ubuntu/php/+build/20133803/+files/libargon2-dev_0~20190702-0.1+ubuntu18.04.1+deb.sury.org+1_amd64.deb
+#- sudo dpkg -i libargon2-dev_0~20190702-0.1+ubuntu18.04.1+deb.sury.org+1_amd64.deb
 - php --version
