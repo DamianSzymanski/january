@@ -26,6 +26,6 @@ php:
   - 7.4
 
 script:
-- sudo apt update
-- sudo apt install libargon2-dev -y
+- wget https://launchpad.net/~ondrej/+archive/ubuntu/php/+build/20133803/+files/libargon2-dev_0~20190702-0.1+ubuntu18.04.1+deb.sury.org+1_amd64.deb
+- sudo dpkg -i libargon2-dev_0~20190702-0.1+ubuntu18.04.1+deb.sury.org+1_amd64.deb
 - php --version
